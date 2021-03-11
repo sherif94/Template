@@ -1,0 +1,23 @@
+:root {
+  --main-color: #0eb493;
+  --second-color: #229782;
+}
+
+/*sign up as company*/
+
+.heading-title {
+  margin: 40px 0;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.btn-submit {
+  border: 0;
+  color: #fff;
+  background-color: var(--main-color);
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: var(--second-color);
+}
