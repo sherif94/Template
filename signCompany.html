@@ -6,69 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap4/bootstrap.min.css">
   <link rel="stylesheet" href="css/mystyle/signupCompany.css">
-  <title>signUp</title>
+  <title>sign Company</title>
 </head>
 <body>
-  
+   
+<div class="row">
 
-  <div class="container">
-    <h1 class="heading-title mt-5">
-        Sign Up As Company
+      <!-- image -->
+  <div class="col-lg-3 hide" class="signup-Company-image">
+      <img src="img/form-img.jpg" class="signup-Company-image" alt="register as company"/>
+  </div><!-- End image -->
 
-    </h1>
-    
+  <div class="col-lg-9 m-0">
+    <!-- Start Container Section-->
+    <div class="container">
+      <!--Header-->
+      <h2 class="heading-title mt-5">
+          Sign Up As Company
+      </h2> <!--End Header-->
+      <!-- Form -->
       <form>
         <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="name">Name Of Your Company</label>
+          <div class="form-group mt-3 col-md-6">
+            <label for="name">Name Of Your Company</label><span class="Required-sign"> *</span>
             <input type="text" class="form-control" id="name">
           </div>
-          <div class="form-group col-md-4">
-            <label for="Username">Username</label>
-            <input type="text" class="form-control" id="Username">
-          </div>
-          <div class="form-group col-md-12">
-            <label for="exampleFormControlFile1">Choose Copany Picture </label>
+          <div class="form-group mt-3 col-md-6">
+            <label for="exampleFormControlFile1">Choose Company Picture </label> <span class="Required-sign"> *</span>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
+          <div class="form-group mt-3 col-md-6">
+            <label for="Username">Username</label><span class="Required-sign"> *</span>
+            <input type="text" class="form-control" id="Username">
+          </div>
+
+          <div class="form-group mt-3 col-md-6">
+            <label for="exampleFormControlFile1">Enter Phone number </label><span class="Required-sign"> *</span>
+            <input type="tel" pattern=".{10}" class="form-control" id="validationCustom08" placeholder="Mobile" required>
+          </div>
+          <div class="form-group mt-3 col-md-6">
+            <label for="inputPassword4">Password</label><span class="Required-sign"> *</span>
             <input type="password" class="form-control" id="inputPassword4">
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group mt-3 col-md-6">
             <label for="ConfirmPassword">Confirm Password</label>
             <input type="password" class="form-control" id="ConfirmPassword">
           </div>
-        </div>
-        <div class="form-group">
-          <label for="Description">Description</label>
-          <textarea class="form-control" id="Description" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="KeyWords">KeyWords</label>
-          <input type="text" class="form-control" id="KeyWords" placeholder=".netframework Asp.net .netcore bootstrap">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
+
+          <!-- Category -->
+          <div class="form-group mt-3 col-lg-6">
+            <label for="inputState">Category</label>
             <select id="inputState" class="form-control">
               <option selected>Choose...</option>
-              <option>...</option>
+              <option>Software</option>
+              <option>Civil</option>
+              <option>Electrical </option>
+              <option>Chemical</option>
+              <option>Mechanical</option>
             </select>
           </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+  
+          <!-- sub category -->
+          <div class="form-group mt-3 col-lg-6">
+            <label for="inputState">Sub Category</label>
+            <select id="inputState" class="form-control">
+              <option selected>Software</option>
+              <option>Web</option>
+              <option>Mobile</option>
+              <option>Cloud </option>
+              <option>Chemical</option>
+              <option>Mechanical</option>
+            </select>
           </div>
-        </div>
+        </div> <!--Form Row-->
+          <!-- Description -->
+          <div class="form-group mt-3">
+            <label for="Description">Description</label><span class="Required-sign"> *</span>
+            <textarea class="form-control" id="Description" rows="3"></textarea>
+          </div> <!--End Description -->
+
+          <!-- key Words -->
+          <div class="form-group mt-3">
+            <label for="KeyWords">KeyWords</label><span class="Required-sign"> *</span>
+            <input type="text" class="form-control" id="KeyWords" placeholder=".netframework Asp.net .netcore bootstrap">
+          </div>  <!--End  key Words -->
+
+          <!-- btns  -->
+          <div class="mt-5">
+              <button type="submit" class="btn btn-primary btn-submit mr-3">Sign in</button> 
+              <button type="reset" class="btn btn-light">Reset</button>
+          </div>
+           <!-- btns  -->
         
-        <button type="submit" class="btn btn-primary btn-submit">Sign in</button>
-      </form>
-  </div>
+      </form>   <!-- End Form -->
+    </div> <!--Container Section-->
+  </div> <!--sign up section-->
+</div>
 
 
   <script src="js/jsbootstrap4/jquery3.5.1.js"></script>
